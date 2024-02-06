@@ -1,0 +1,28 @@
+<!-- Popout Card -->
+<mat-card>
+  <!-- Game Board -->
+  <main>
+    <app-square
+      *ngFor="let val of squares; let i = index"
+      [value]="val"
+      (click)="makeMove(i)"
+    >
+    </app-square>
+  </main>
+  <!-- End Game Board -->
+
+  <!-- Game Captions -->
+  <div class="modal-heading" >
+    <div *ngIf="winner; then thenBlock; else elseBlock"></div>
+    <ng-template #thenBlock
+      ><h1>Player {{ winner }} won the game!</h1></ng-template
+    >
+    <ng-template #elseBlock><h1>Three in a Row Wins!</h1></ng-template>
+
+    <button mat-raised-button color="primary" (click)="newGame()">
+      Start new Game
+    </button>
+  </div>
+  <!-- End Game Captions -->
+</mat-card>
+<!-- End Popout Card -->

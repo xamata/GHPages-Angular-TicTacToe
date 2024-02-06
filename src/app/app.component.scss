@@ -1,0 +1,24 @@
+app-board {
+  // display: block;
+  // justify-content: center;
+  // align-items: center;
+  position: relative;
+  height: 95%;
+  width: 50%; // Adjust the width as needed
+  max-width: 500px; // Optional: Set a maximum width if desired
+  margin: 50px; // Center the component horizontally
+}
+
+app-header {
+  // overflow: hidden;
+  position: fixed;
+}
+
+body {
+}
+
+app-footer {
+  display: fixed;
+  position: absolute;
+  bottom: 0px;
+}
