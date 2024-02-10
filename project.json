@@ -54,10 +54,10 @@
       "executor": "@angular-devkit/build-angular:dev-server",
       "configurations": {
         "production": {
-          "buildTarget": "angular-myapp:build:production"
+          "buildTarget": "ghpages-angular-tictactoe:build:production"
         },
         "development": {
-          "buildTarget": "angular-myapp:build:development"
+          "buildTarget": "ghpages-angular-tictactoe:build:development"
         }
       },
       "defaultConfiguration": "development"
@@ -65,7 +65,7 @@
     "extract-i18n": {
       "executor": "@angular-devkit/build-angular:extract-i18n",
       "options": {
-        "buildTarget": "angular-myapp:build"
+        "buildTarget": "ghpages-angular-tictactoe:build"
       }
     },
     "test": {
