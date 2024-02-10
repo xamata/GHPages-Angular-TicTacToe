@@ -1,6 +1,6 @@
 {
   "$schema": "node_modules/nx/schemas/project-schema.json",
-  "name": "angular-myapp",
+  "name": "ghpages-angular-tictactoe",
   "projectType": "application",
   "generators": {
     "@schematics/angular:component": {
@@ -13,7 +13,7 @@
     "build": {
       "executor": "@angular-devkit/build-angular:application",
       "options": {
-        "outputPath": "dist/angular-myapp",
+        "outputPath": "dist/ghpages-angular-tictactoe",
         "index": "src/index.html",
         "browser": "src/main.ts",
         "polyfills": ["zone.js"],
