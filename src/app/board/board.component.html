@@ -1,6 +1,9 @@
 <!-- Popout Card -->
 <mat-card>
   <!-- Game Board -->
+  <div class="modal-heading">
+    <h1>TicTacToe</h1>
+  </div>
   <main>
     <app-square
       *ngFor="let val of squares; let i = index"
@@ -12,7 +15,7 @@
   <!-- End Game Board -->
 
   <!-- Game Captions -->
-  <div class="modal-heading" >
+  <div class="modal-subheading">
     <div *ngIf="winner; then thenBlock; else elseBlock"></div>
     <ng-template #thenBlock
       ><h1>Player {{ winner }} won the game!</h1></ng-template

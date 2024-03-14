@@ -10,8 +10,6 @@
 .pagination-next,
 .pagination-link,
 .pagination-ellipsis {
-  -moz-appearance: none;
-  -webkit-appearance: none;
   align-items: center;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -152,8 +150,6 @@ fieldset[disabled] .pagination-ellipsis {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  -moz-appearance: none;
-  -webkit-appearance: none;
   background-color: rgba(10, 10, 10, 0.2);
   border: none;
   border-radius: 9999px;
@@ -2779,8 +2775,6 @@ div.icon-text {
 }
 
 .progress {
-  -moz-appearance: none;
-  -webkit-appearance: none;
   border: none;
   border-radius: 9999px;
   display: block;
@@ -5866,7 +5860,6 @@ button.dropdown-item.is-active {
   flex-direction: column;
   max-height: calc(100vh - 40px);
   overflow: hidden;
-  -ms-overflow-y: visible;
 }
 
 .modal-card-head,
